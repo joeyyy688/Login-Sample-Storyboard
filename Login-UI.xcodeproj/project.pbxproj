@@ -13,6 +13,8 @@
 		04D410D129FA803E009021EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D410CF29FA803E009021EC /* Main.storyboard */; };
 		04D410D329FA803F009021EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D410D229FA803F009021EC /* Assets.xcassets */; };
 		04D410D629FA803F009021EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D410D429FA803F009021EC /* LaunchScreen.storyboard */; };
+		04D410E129FA86A2009021EC /* SAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D410E029FA86A2009021EC /* SAButton.swift */; };
+		04D410E329FAADBC009021EC /* SATextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D410E229FAADBC009021EC /* SATextfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		04D410D229FA803F009021EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D410D529FA803F009021EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D410D729FA803F009021EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D410E029FA86A2009021EC /* SAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAButton.swift; sourceTree = "<group>"; };
+		04D410E229FAADBC009021EC /* SATextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATextfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		04D410C829FA803E009021EC /* Login-UI */ = {
 			isa = PBXGroup;
 			children = (
+				04D410DF29FA867D009021EC /* CustomViews */,
+				04D410DE29FA8676009021EC /* Views */,
+				04D410DD29FA865D009021EC /* Controllers */,
 				04D410C929FA803E009021EC /* AppDelegate.swift */,
 				04D410CB29FA803E009021EC /* SceneDelegate.swift */,
-				04D410CD29FA803E009021EC /* ViewController.swift */,
 				04D410CF29FA803E009021EC /* Main.storyboard */,
 				04D410D229FA803F009021EC /* Assets.xcassets */,
 				04D410D429FA803F009021EC /* LaunchScreen.storyboard */,
 				04D410D729FA803F009021EC /* Info.plist */,
 			);
 			path = "Login-UI";
+			sourceTree = "<group>";
+		};
+		04D410DD29FA865D009021EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04D410CD29FA803E009021EC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04D410DE29FA8676009021EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04D410DF29FA867D009021EC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				04D410E029FA86A2009021EC /* SAButton.swift */,
+				04D410E229FAADBC009021EC /* SATextfield.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D410CE29FA803E009021EC /* ViewController.swift in Sources */,
+				04D410E329FAADBC009021EC /* SATextfield.swift in Sources */,
+				04D410E129FA86A2009021EC /* SAButton.swift in Sources */,
 				04D410CA29FA803E009021EC /* AppDelegate.swift in Sources */,
 				04D410CC29FA803E009021EC /* SceneDelegate.swift in Sources */,
 			);
